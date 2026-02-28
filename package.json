@@ -44,11 +44,15 @@
   ],
   "author": "Transactional",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/transactional/transactional-llm"
+    "url": "https://github.com/TransactionalHQ/llm.git"
   },
-  "homepage": "https://transactional.dev/docs/llm-ops",
+  "homepage": "https://usetransactional.com/docs/llm-ops",
   "dependencies": {
     "nanoid": "^5.0.4"
   },

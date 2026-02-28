@@ -1,0 +1,79 @@
+{
+  "name": "@usetransactional/llm",
+  "version": "0.1.0",
+  "description": "LLM Ops SDK for Transactional - AI observability with cost tracking and trace analysis",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./langchain": {
+      "types": "./dist/integrations/langchain.d.ts",
+      "import": "./dist/integrations/langchain.mjs",
+      "require": "./dist/integrations/langchain.js"
+    },
+    "./vercel-ai": {
+      "types": "./dist/integrations/vercel-ai.d.ts",
+      "import": "./dist/integrations/vercel-ai.mjs",
+      "require": "./dist/integrations/vercel-ai.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts src/integrations/langchain.ts src/integrations/vercel-ai.ts --format esm,cjs --dts",
+    "dev": "tsup src/index.ts src/integrations/langchain.ts src/integrations/vercel-ai.ts --format esm,cjs --dts --watch",
+    "lint": "eslint src/",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "llm",
+    "observability",
+    "langchain",
+    "openai",
+    "anthropic",
+    "tracing",
+    "monitoring",
+    "cost-tracking"
+  ],
+  "author": "Transactional",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/transactional/transactional-llm"
+  },
+  "homepage": "https://transactional.dev/docs/llm-ops",
+  "dependencies": {
+    "nanoid": "^5.0.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@langchain/core": "^0.3.0",
+    "@types/node": "^20.10.0",
+    "eslint": "^9.0.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "typescript-eslint": "^8.0.0"
+  },
+  "peerDependencies": {
+    "@langchain/core": ">=0.2.0",
+    "ai": ">=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@langchain/core": {
+      "optional": true
+    },
+    "ai": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

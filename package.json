@@ -1,6 +1,6 @@
 {
   "name": "@usetransactional/llm-node",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "LLM Ops SDK for Transactional - AI observability with cost tracking and trace analysis",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

@@ -1,5 +1,5 @@
 {
-  "name": "@usetransactional/llm",
+  "name": "@usetransactional/llm-node",
   "version": "0.1.0",
   "description": "LLM Ops SDK for Transactional - AI observability with cost tracking and trace analysis",
   "main": "./dist/index.js",
@@ -50,7 +50,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/TransactionalHQ/llm.git"
+    "url": "https://github.com/TransactionalHQ/llm-node.git"
   },
   "homepage": "https://usetransactional.com/docs/llm-ops",
   "dependencies": {

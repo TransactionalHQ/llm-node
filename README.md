@@ -99,7 +99,7 @@ initLlmOps({
 
 ## Documentation
 
-Full documentation available at [usetransactional.com/docs/llm-ops](https://usetransactional.com/docs/llm-ops)
+Full documentation available at [usetransactional.com/docs/observability](https://usetransactional.com/docs/observability)
 
 ## License
 

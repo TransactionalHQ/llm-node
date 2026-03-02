@@ -5,7 +5,7 @@
  *
  * @example
  * ```typescript
- * import { wrapAiSdk } from 'transactional-llm/vercel-ai';
+ * import { wrapAiSdk } from '@usetransactional/llm-node/vercel-ai';
  * import { generateText } from 'ai';
  *
  * const wrappedGenerateText = wrapAiSdk(generateText);

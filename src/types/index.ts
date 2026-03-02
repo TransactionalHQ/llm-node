@@ -163,7 +163,7 @@ export interface BatchIngestResult {
 // ===========================================
 
 export interface LlmOpsConfig {
-  /** DSN format: https://{publicKey}@api.transactional.dev/observability/{projectId} */
+  /** DSN format: https://{publicKey}@api.usetransactional.com/observability/{projectId} */
   dsn?: string;
   /** Public key (alternative to DSN) */
   publicKey?: string;

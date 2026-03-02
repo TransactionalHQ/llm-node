@@ -63,7 +63,7 @@ export class LlmOpsClient {
   private parseConfig(config: LlmOpsConfig): ParsedConfig {
     let publicKey = config.publicKey;
     let projectId = config.projectId;
-    let baseUrl = config.baseUrl || 'https://api.transactional.dev';
+    let baseUrl = config.baseUrl || 'https://api.usetransactional.com';
 
     if (config.dsn) {
       try {

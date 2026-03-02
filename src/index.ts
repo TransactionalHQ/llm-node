@@ -5,7 +5,7 @@
  *
  * @example
  * ```typescript
- * import { initLlmOps, getLlmOps } from 'transactional-llm';
+ * import { initLlmOps, getLlmOps } from '@usetransactional/llm-node';
  *
  * initLlmOps({
  *   dsn: process.env.TRANSACTIONAL_LLM_OPS_DSN!,
@@ -50,7 +50,7 @@ let defaultClient: LlmOpsClient | null = null;
  * @example
  * ```typescript
  * initLlmOps({
- *   dsn: 'https://pk_...@api.transactional.dev/observability/42',
+ *   dsn: 'https://pk_...@api.usetransactional.com/observability/42',
  * });
  * ```
  */

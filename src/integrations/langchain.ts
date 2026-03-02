@@ -5,7 +5,7 @@
  *
  * @example
  * ```typescript
- * import { TransactionalCallbackHandler } from 'transactional-llm/langchain';
+ * import { TransactionalCallbackHandler } from '@usetransactional/llm-node/langchain';
  * import { ChatOpenAI } from '@langchain/openai';
  *
  * const handler = new TransactionalCallbackHandler({
